@@ -1,20 +1,27 @@
+
 import datetime
+
+## Date Output
+#x = datetime.datetime.now()
+#print(x)
 
 x = datetime.datetime.now()
 print(x)
-print(x.day)
-print(x.month)
-print(x.year)
 print(x.strftime("%A"))
 
+## Date Objects
 
-import datetime
-
-x = datetime.datetime(2020, 5, 17)
+x = datetime.datetime(2022, 12, 31)
 print(x)
 
+x = datetime.datetime(2018, 6, 1)
+#print(x.strftime('%B'))
+#print(x.strftime('%a'))
+#print(x.strftime('%p'))
+
 import datetime
 
-x = datetime.datetime(2018, 3, 31)
-print(x.strftime("%B"))
+time = datetime.datetime.now()
 
+print(time)
+print(time.strftime('%p'))
